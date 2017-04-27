@@ -13,6 +13,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 
 public class Formrun extends JFrame{
    
@@ -29,7 +30,7 @@ public class Formrun extends JFrame{
 		Github.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				try {
-					Desktop.getDesktop().browse(new URL("").toURI());
+					Desktop.getDesktop().browse(new URL("https://github.com/tot14883/GamePokemon").toURI());
 				} catch (IOException | URISyntaxException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -75,7 +76,7 @@ public class Formrun extends JFrame{
 	    icon.getImage().flush();
 	    Background.setIcon( icon );
 		}catch(Exception e){
-			
+			JOptionPane.showMessageDialog(null,"Dowload JSON in GITHUB to Drive D Only !!!!");
 		}
 	}
    

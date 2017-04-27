@@ -184,8 +184,7 @@ public class Fight extends JFrame implements ActionListener{
 	    skill1 = new JButton("");
 	    skill1.addActionListener(new ActionListener() {
 	    	public void actionPerformed(ActionEvent e) { 		    
-	    		skill();
-		    			    
+	    		skill();	    			    
 	    	}
 	    });
 		skill1.setBounds(53, 455, 136, 46);
@@ -235,7 +234,7 @@ public class Fight extends JFrame implements ActionListener{
 	    PK2.setIcon(icon1);	  	   
 	    
 		}catch(Exception e){
-			JOptionPane.showMessageDialog(null, e);
+			JOptionPane.showMessageDialog(null,"Dowload JSON in GITHUB to Drive D Only !!!!");
 		}
 	}
 
@@ -375,7 +374,7 @@ public class Fight extends JFrame implements ActionListener{
 	}
     
     public void skill(){
-    	try{
+    	
     	if(Poke.name.get(0).equals(input1)){		        	 		          
     		HPE.setText(String.valueOf(att.heal1 - Poke.atk));
     		Poke.atk += random;
@@ -499,7 +498,7 @@ public class Fight extends JFrame implements ActionListener{
 		    		         	JOptionPane.showMessageDialog(null,"You Change Pokemon");
 		    		      }
 		         	else if(Poke.atk6 >= Poke.heal5){	    	        		
-		    		     		Poke.atk6 = 0;
+		    		     		Poke.atk = 0;
 		    		 	    	att.atk6 = 0;
 		    		 	    	att.heal1 = 0;
 		    		     		HPE.setText("0");	        		      	
@@ -509,9 +508,7 @@ public class Fight extends JFrame implements ActionListener{
 		         	}		    		     		
 		    		}	
     		}
-	    		}catch(Exception e2){
-	    			
-	    		}
+	    		
     
     }
 }

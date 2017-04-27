@@ -2,6 +2,8 @@ package main;
 
 import java.io.FileReader;
 
+import javax.swing.JOptionPane;
+
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -29,7 +31,7 @@ public class Attack {//JSON pokemon arcoss
 		     		       
 		  }catch(Exception e)
 		  {
-			
+			  JOptionPane.showMessageDialog(null,"Dowload JSON in GITHUB to Drive D Only !!!!");
 		  }	
    }
    
